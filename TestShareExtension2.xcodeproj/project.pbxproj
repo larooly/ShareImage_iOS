@@ -16,6 +16,11 @@
 		5156880A2592D2BD00B23A31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 515688092592D2BD00B23A31 /* main.m */; };
 		515688142592D2BD00B23A31 /* TestShareExtension2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 515688132592D2BD00B23A31 /* TestShareExtension2Tests.m */; };
 		5156881F2592D2BD00B23A31 /* TestShareExtension2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5156881E2592D2BD00B23A31 /* TestShareExtension2UITests.m */; };
+		5156883A2592D3C000B23A31 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 515688392592D3C000B23A31 /* ShareViewController.m */; };
+		5156883D2592D3C000B23A31 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5156883B2592D3C000B23A31 /* MainInterface.storyboard */; };
+		515688412592D3C000B23A31 /* ShareEx.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 515688362592D3C000B23A31 /* ShareEx.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		51568858259305E400B23A31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515688032592D2BD00B23A31 /* Assets.xcassets */; };
+		517A781625A2F92200F68925 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 515687FE2592D2BC00B23A31 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +38,28 @@
 			remoteGlobalIDString = 515687F32592D2BC00B23A31;
 			remoteInfo = TestShareExtension2;
 		};
+		5156883F2592D3C000B23A31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 515687EC2592D2BC00B23A31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 515688352592D3C000B23A31;
+			remoteInfo = ShareEx;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		515688452592D3C000B23A31 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				515688412592D3C000B23A31 /* ShareEx.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		515687F42592D2BC00B23A31 /* TestShareExtension2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestShareExtension2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +80,11 @@
 		5156881A2592D2BD00B23A31 /* TestShareExtension2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestShareExtension2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5156881E2592D2BD00B23A31 /* TestShareExtension2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestShareExtension2UITests.m; sourceTree = "<group>"; };
 		515688202592D2BD00B23A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		515688362592D3C000B23A31 /* ShareEx.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareEx.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		515688382592D3C000B23A31 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		515688392592D3C000B23A31 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		5156883C2592D3C000B23A31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5156883E2592D3C000B23A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +109,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		515688332592D3C000B23A31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,6 +125,7 @@
 				515687F62592D2BC00B23A31 /* TestShareExtension2 */,
 				515688122592D2BD00B23A31 /* TestShareExtension2Tests */,
 				5156881D2592D2BD00B23A31 /* TestShareExtension2UITests */,
+				515688372592D3C000B23A31 /* ShareEx */,
 				515687F52592D2BC00B23A31 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +136,7 @@
 				515687F42592D2BC00B23A31 /* TestShareExtension2.app */,
 				5156880F2592D2BD00B23A31 /* TestShareExtension2Tests.xctest */,
 				5156881A2592D2BD00B23A31 /* TestShareExtension2UITests.xctest */,
+				515688362592D3C000B23A31 /* ShareEx.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +177,17 @@
 			path = TestShareExtension2UITests;
 			sourceTree = "<group>";
 		};
+		515688372592D3C000B23A31 /* ShareEx */ = {
+			isa = PBXGroup;
+			children = (
+				515688382592D3C000B23A31 /* ShareViewController.h */,
+				515688392592D3C000B23A31 /* ShareViewController.m */,
+				5156883B2592D3C000B23A31 /* MainInterface.storyboard */,
+				5156883E2592D3C000B23A31 /* Info.plist */,
+			);
+			path = ShareEx;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,10 +198,12 @@
 				515687F02592D2BC00B23A31 /* Sources */,
 				515687F12592D2BC00B23A31 /* Frameworks */,
 				515687F22592D2BC00B23A31 /* Resources */,
+				515688452592D3C000B23A31 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				515688402592D3C000B23A31 /* PBXTargetDependency */,
 			);
 			name = TestShareExtension2;
 			productName = TestShareExtension2;
@@ -193,6 +246,23 @@
 			productReference = 5156881A2592D2BD00B23A31 /* TestShareExtension2UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		515688352592D3C000B23A31 /* ShareEx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 515688422592D3C000B23A31 /* Build configuration list for PBXNativeTarget "ShareEx" */;
+			buildPhases = (
+				515688322592D3C000B23A31 /* Sources */,
+				515688332592D3C000B23A31 /* Frameworks */,
+				515688342592D3C000B23A31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareEx;
+			productName = ShareEx;
+			productReference = 515688362592D3C000B23A31 /* ShareEx.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,6 +282,9 @@
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = 515687F32592D2BC00B23A31;
 					};
+					515688352592D3C000B23A31 = {
+						CreatedOnToolsVersion = 12.3;
+					};
 				};
 			};
 			buildConfigurationList = 515687EF2592D2BC00B23A31 /* Build configuration list for PBXProject "TestShareExtension2" */;
@@ -230,6 +303,7 @@
 				515687F32592D2BC00B23A31 /* TestShareExtension2 */,
 				5156880E2592D2BD00B23A31 /* TestShareExtension2Tests */,
 				515688192592D2BD00B23A31 /* TestShareExtension2UITests */,
+				515688352592D3C000B23A31 /* ShareEx */,
 			);
 		};
 /* End PBXProject section */
@@ -256,6 +330,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		515688342592D3C000B23A31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51568858259305E400B23A31 /* Assets.xcassets in Resources */,
+				5156883D2592D3C000B23A31 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +372,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		515688322592D3C000B23A31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517A781625A2F92200F68925 /* ViewController.m in Sources */,
+				5156883A2592D3C000B23A31 /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -301,6 +393,11 @@
 			isa = PBXTargetDependency;
 			target = 515687F32592D2BC00B23A31 /* TestShareExtension2 */;
 			targetProxy = 5156881B2592D2BD00B23A31 /* PBXContainerItemProxy */;
+		};
+		515688402592D3C000B23A31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 515688352592D3C000B23A31 /* ShareEx */;
+			targetProxy = 5156883F2592D3C000B23A31 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -319,6 +416,14 @@
 				515688062592D2BD00B23A31 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5156883B2592D3C000B23A31 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5156883C2592D3C000B23A31 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -444,6 +549,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XM9NMWX24Z;
 				INFOPLIST_FILE = TestShareExtension2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +568,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XM9NMWX24Z;
 				INFOPLIST_FILE = TestShareExtension2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -548,6 +655,44 @@
 			};
 			name = Release;
 		};
+		515688432592D3C000B23A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XM9NMWX24Z;
+				INFOPLIST_FILE = ShareEx/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onnuriinfotek.TestShareExtension2.ShareEx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		515688442592D3C000B23A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XM9NMWX24Z;
+				INFOPLIST_FILE = ShareEx/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onnuriinfotek.TestShareExtension2.ShareEx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,6 +728,15 @@
 			buildConfigurations = (
 				5156882A2592D2BD00B23A31 /* Debug */,
 				5156882B2592D2BD00B23A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		515688422592D3C000B23A31 /* Build configuration list for PBXNativeTarget "ShareEx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				515688432592D3C000B23A31 /* Debug */,
+				515688442592D3C000B23A31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
